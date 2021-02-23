@@ -503,7 +503,7 @@ GROUP BY team_name
 ORDER BY team_name;
 
 --20--
-SELECT player_name
+SELECT player_name AS player_names
 FROM player, wicket_taken
 WHERE player.player_id = wicket_taken.player_out
 AND wicket_taken.innings_no IN (1, 2)

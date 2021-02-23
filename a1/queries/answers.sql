@@ -56,7 +56,7 @@ FROM player, (
     SELECT fielders, COUNT(fielders) AS catches
     FROM wicket_taken, match, season
     WHERE match.match_id = wicket_taken.match_id
-    AND wicket_taken.kind_out IN (1, 3, 6)
+    AND wicket_taken.kind_out = 1
     AND match.season_id = season.season_id
     AND season.season_year = 2012
     GROUP BY fielders
@@ -287,6 +287,7 @@ FROM (
 WHERE player.player_id = match_table.player_id
 AND player.player_id = run_table.player_id
 AND player.player_id = wicket_table.player_id
+AND player.batting_hand = 1
 AND season.season_id = match_table.season_id
 AND season.season_id = run_table.season_id
 AND season.season_id = wicket_table.season_id
@@ -466,8 +467,7 @@ FROM (
         FROM (
             SELECT ball_by_ball.bowler, ball_by_ball.match_id, ball_by_ball.over_id, ball_by_ball.innings_no, SUM(batsman_scored.runs_scored) AS runs_conceded
             FROM ball_by_ball, batsman_scored
-            WHERE ball_by_ball.innings_no IN (1, 2)
-            AND ball_by_ball.match_id = batsman_scored.match_id
+            WHERE ball_by_ball.match_id = batsman_scored.match_id
             AND ball_by_ball.over_id = batsman_scored.over_id
             AND ball_by_ball.ball_id = batsman_scored.ball_id
             AND ball_by_ball.innings_no = batsman_scored.innings_no

@@ -1,0 +1,343 @@
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+    name     
+-------------
+ A_C_1
+ A_D
+ Albuquerque
+ Chicago
+ Chicago1
+ Washington
+(6 rows)
+
+    name     
+-------------
+ A_C_1
+ A_D
+ A_E
+ Albuquerque
+ Chicago
+ Chicago1
+ Washington
+(7 rows)
+
+    name    
+------------
+ A_C_1
+ A_E
+ Washington
+(3 rows)
+
+ length 
+--------
+      5
+(1 row)
+
+ length 
+--------
+      5
+(1 row)
+
+ count 
+-------
+     1
+(1 row)
+
+ count 
+-------
+     1
+(1 row)
+
+    name1    |    name2    
+-------------+-------------
+ A_C_1       | N
+ A_C_1       | NN
+ A_C_1       | NNN
+ A_D         | N
+ A_D         | NN
+ A_D         | NNN
+ A_E         | A_C_1
+ A_E         | A_D
+ A_E         | Albuquerque
+ A_E         | Chicago
+ A_E         | Chicago1
+ A_E         | N
+ A_E         | NN
+ A_E         | NNN
+ A_E         | Washington
+ Albuquerque | N
+ Albuquerque | NN
+ Albuquerque | NNN
+ Chicago     | N
+ Chicago     | NN
+ Chicago     | NNN
+ Chicago1    | N
+ Chicago1    | NN
+ Chicago1    | NNN
+ N           | A_C_1
+ N           | A_D
+ N           | A_E
+ N           | Albuquerque
+ N           | Chicago
+ N           | Chicago1
+ N           | Washington
+ NN          | A_C_1
+ NN          | A_D
+ NN          | A_E
+ NN          | Albuquerque
+ NN          | Chicago
+ NN          | Chicago1
+ NN          | Washington
+ NNN         | A_C_1
+ NNN         | A_D
+ NNN         | A_E
+ NNN         | Albuquerque
+ NNN         | Chicago
+ NNN         | Chicago1
+ NNN         | Washington
+ Washington  | N
+ Washington  | NN
+ Washington  | NNN
+(48 rows)
+
+ day 
+-----
+   4
+   5
+   6
+   7
+   8
+   9
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  20
+  21
+  22
+  23
+  24
+  25
+  26
+  27
+  28
+  29
+  30
+  31
+   1
+   2
+   3
+(31 rows)
+
+ name 
+------
+ N
+(1 row)
+
+    name1    |    name2    
+-------------+-------------
+ A_C_1       | A_D
+ A_C_1       | A_E
+ A_D         | A_C_1
+ A_D         | A_D
+ A_D         | Albuquerque
+ A_D         | Chicago
+ A_D         | Chicago1
+ A_D         | Washington
+ Albuquerque | A_C_1
+ Albuquerque | A_D
+ Albuquerque | Albuquerque
+ Albuquerque | Chicago
+ Albuquerque | Chicago1
+ Albuquerque | Washington
+ Chicago     | A_C_1
+ Chicago     | A_D
+ Chicago     | Albuquerque
+ Chicago     | Chicago
+ Chicago     | Chicago1
+ Chicago     | Washington
+ Chicago1    | A_C_1
+ Chicago1    | A_D
+ Chicago1    | Albuquerque
+ Chicago1    | Chicago
+ Chicago1    | Chicago1
+ Chicago1    | Washington
+ N           | N
+ N           | NN
+ N           | NNN
+ NN          | N
+ NN          | NN
+ NN          | NNN
+ NNN         | N
+ NNN         | NN
+ NNN         | NNN
+ Washington  | A_C_1
+ Washington  | A_D
+ Washington  | Albuquerque
+ Washington  | Chicago
+ Washington  | Chicago1
+ Washington  | Washington
+(41 rows)
+
+ authorid | length 
+----------+--------
+     1239 |      2
+     1240 |      2
+     1241 |      2
+     1236 |      1
+     1237 |      1
+     1238 |      1
+        1 |     -1
+        2 |     -1
+        3 |     -1
+        4 |     -1
+        5 |     -1
+        6 |     -1
+        7 |     -1
+        8 |     -1
+        9 |     -1
+       10 |     -1
+      102 |     -1
+      321 |     -1
+      456 |     -1
+      501 |     -1
+      502 |     -1
+      503 |     -1
+      504 |     -1
+      505 |     -1
+      506 |     -1
+      507 |     -1
+      508 |     -1
+      509 |     -1
+      510 |     -1
+      562 |     -1
+      701 |     -1
+      702 |     -1
+      703 |     -1
+      704 |     -1
+      705 |     -1
+      921 |     -1
+     1230 |     -1
+     1231 |     -1
+     1436 |     -1
+     1551 |     -1
+     1552 |     -1
+     1553 |     -1
+     1554 |     -1
+     1555 |     -1
+     1556 |     -1
+     1557 |     -1
+     1558 |     -1
+     1741 |     -1
+     1742 |     -1
+     1743 |     -1
+     1744 |     -1
+     1745 |     -1
+     2826 |     -1
+     3552 |     -1
+     3553 |     -1
+(55 rows)
+
+ count 
+-------
+    13
+(1 row)
+
+ count 
+-------
+     5
+(1 row)
+
+ count 
+-------
+    19
+(1 row)
+
+ authorid 
+----------
+      506
+      507
+      508
+      509
+      505
+      503
+      701
+      702
+      703
+        1
+(10 rows)
+
+ authorid 
+----------
+      508
+      509
+      506
+      501
+      502
+        1
+        2
+        3
+        4
+        5
+(10 rows)
+
+ count 
+-------
+    63
+(1 row)
+
+ count 
+-------
+     9
+(1 row)
+
+ count 
+-------
+    11
+(1 row)
+
+ conferencename | count 
+----------------+-------
+ CONFNULL       |     7
+ CONF3          |     3
+ CONF1          |     2
+ CONF2          |     1
+(4 rows)
+
+ conferencename | count 
+----------------+-------
+ CONF1          |     1
+ CONF3          |     1
+ CONF3          |     1
+ CONFNULL       |     2
+ CONF1          |     3
+ CONF2          |     4
+ CONF3          |     4
+ CONFNULL       |     6
+ CONFNULL       |     6
+ CONFNULL       |     6
+ CONFNULL       |     7
+ CONFNULL       |     9
+ CONFNULL       |    10
+(13 rows)
+
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
